@@ -1,33 +1,33 @@
-use employees;
-
 INSERT INTO department
     (name)
 VALUES
-    ('Sales'),
-    ('Engineering'),
-    ('Finance'),
-    ('Legal');
+    ('Sales Department'),
+    ('Engineering Department'),
+    ('Finance Department'),
+    ('Legal Department');
 
+-- Inserting Roles
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Sales Lead', 100000, 1),
-    ('Salesperson', 80000, 1),
-    ('Lead Engineer', 150000, 2),
+    ('Sales Manager', 100000, 1),
+    ('Sales Representative', 80000, 1),
+    ('Engineering Manager', 150000, 2),
     ('Software Engineer', 120000, 2),
-    ('Account Manager', 160000, 3),
+    ('Finance Manager', 160000, 3),
     ('Accountant', 125000, 3),
-    ('Legal Team Lead', 250000, 4),
+    ('Legal Team Manager', 250000, 4),
     ('Lawyer', 190000, 4);
 
+-- Inserting Employees
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES
-    ('John', 'Doe', 1, NULL),
-    ('Mike', 'Chan', 2, 1),
-    ('Ashley', 'Rodriguez', 3, NULL),
-    ('Kevin', 'Tupik', 4, 3),
-    ('Kunal', 'Singh', 5, NULL),
-    ('Malia', 'Brown', 6, 5),
-    ('Sarah', 'Lourd', 7, NULL),
-    ('Tom', 'Allen', 8, 7);
+    ('Emily', 'Smith', 1, NULL),
+    ('Michael', 'Johnson', 2, 1),
+    ('Alex', 'Martinez', 3, NULL),
+    ('Jessica', 'Walker', 4, 3),
+    ('Daniel', 'Lee', 5, NULL),
+    ('Olivia', 'Miller', 6, 5),
+    ('David', 'Taylor', 7, NULL),
+    ('Sophia', 'Scott', 8, 7);
